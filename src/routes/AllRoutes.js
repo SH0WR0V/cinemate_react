@@ -5,7 +5,7 @@ export const AllRoutes = () => {
   return (
     <div className="bg-white dark:bg-gray-900">
       <Routes>
-        <Route path="/" element={<MovieList apiPath="movie/now_playing" />} />
+        <Route path="" element={<MovieList apiPath="movie/now_playing" />} />
         <Route path="movie/:id" element={<MovieDetail />} />
         <Route
           path="movies/popular"

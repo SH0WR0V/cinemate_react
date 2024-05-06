@@ -19,7 +19,7 @@ export const Footer = () => {
           </li>
           <li>
             <a
-              href="#"
+              href="https://github.com/SH0WR0V"
               target="_blank"
               className="hover:underline me-4 md:me-6"
             >
