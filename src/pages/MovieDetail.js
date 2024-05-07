@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Backup from "../assets/images/backup.png";
+import { useTitle } from "../hooks/useTitle";
 
 export const MovieDetail = () => {
   const params = useParams();
   const [movie, setMovie] = useState({});
+
+  useTitle(movie.title);
 
   useEffect(() => {
     async function fetchMovie() {
@@ -93,7 +96,7 @@ export const MovieDetail = () => {
               href={`https://www.imdb.com/title/${movie.imdb_id}`}
               target="_blank"
               rel="noreferrer"
-              className="text-cyan-700"
+              className="text-cyan-600"
             >
               {movie.imdb_id}
             </a>
